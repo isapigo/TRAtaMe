@@ -1,0 +1,16 @@
+AppTRAtaMe.EpisodioActivity, AppTRAtaMe;md5c8ea03c3c6b419bbf26b4e9a56923452.EpisodioActivity
+AppTRAtaMe.EpisodioActivity, AppTRAtaMe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5c8ea03c3c6b419bbf26b4e9a56923452.EpisodioActivity
+AppTRAtaMe.EpisodioActivity;md5c8ea03c3c6b419bbf26b4e9a56923452.EpisodioActivity
+apptratame.EpisodioActivity;md5c8ea03c3c6b419bbf26b4e9a56923452.EpisodioActivity
+AppTRAtaMe.FotoActivity, AppTRAtaMe;md5c8ea03c3c6b419bbf26b4e9a56923452.FotoActivity
+AppTRAtaMe.FotoActivity, AppTRAtaMe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5c8ea03c3c6b419bbf26b4e9a56923452.FotoActivity
+AppTRAtaMe.FotoActivity;md5c8ea03c3c6b419bbf26b4e9a56923452.FotoActivity
+apptratame.FotoActivity;md5c8ea03c3c6b419bbf26b4e9a56923452.FotoActivity
+AppTRAtaMe.LoginActivity, AppTRAtaMe;md5c8ea03c3c6b419bbf26b4e9a56923452.LoginActivity
+AppTRAtaMe.LoginActivity, AppTRAtaMe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5c8ea03c3c6b419bbf26b4e9a56923452.LoginActivity
+AppTRAtaMe.LoginActivity;md5c8ea03c3c6b419bbf26b4e9a56923452.LoginActivity
+apptratame.LoginActivity;md5c8ea03c3c6b419bbf26b4e9a56923452.LoginActivity
+AppTRAtaMe.MainActivity, AppTRAtaMe;md5c8ea03c3c6b419bbf26b4e9a56923452.MainActivity
+AppTRAtaMe.MainActivity, AppTRAtaMe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5c8ea03c3c6b419bbf26b4e9a56923452.MainActivity
+AppTRAtaMe.MainActivity;md5c8ea03c3c6b419bbf26b4e9a56923452.MainActivity
+apptratame.MainActivity;md5c8ea03c3c6b419bbf26b4e9a56923452.MainActivity

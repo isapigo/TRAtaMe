@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Autora: Isabel Piñuel González -->
+<!-- Este proyecto es parte del TFG del Curso de Adaptación al Grado de Informática -->
+<!-- Universidad Internacional de la Rioja (UNIR) -->
+<resources>
+  <string name="app_name">"TRAtaMe Móvil"</string>
+  <string name="conectar">Proceso de entrada:</string>
+  <string name="login">Iniciar sesión</string>
+  <string name="result"></string>
+  <string name="episodio_prompt">Seleccion de Episodio</string>
+  <string name="serv_no_prompt">Servicios</string>
+  <string name="Foto">Cámara</string>
+  <string name="episodio_foto">Episodio</string>
+  <string name="Borra_Foto">Borrar</string>
+  <string name="Foto_Sig">Sig.&#9654;</string>
+  <string name="Foto_Ant">&#9664;Ant.</string>
+  <string name="Video">Cámara</string>
+  <string name="episodio_Video">Episodio</string>
+  <string name="Borra_Video">Borrar</string>
+  <string name="Video_Sig">Sig.&#9654;</string>
+  <string name="Video_Ant">&#9664;Ant.</string>
+</resources>

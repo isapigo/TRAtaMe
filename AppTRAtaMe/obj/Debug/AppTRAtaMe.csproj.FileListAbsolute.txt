@@ -1,0 +1,200 @@
+C:\TRAtaMe_new\AppTRAtaMe\bin\Debug\AppTRAtaMe.dll
+C:\TRAtaMe_new\AppTRAtaMe\bin\Debug\AppTRAtaMe.pdb
+C:\TRAtaMe_new\AppTRAtaMe\bin\Debug\AppTRAtaMe.AppTRAtaMe.apk
+C:\TRAtaMe_new\AppTRAtaMe\bin\Debug\AppTRAtaMe.AppTRAtaMe-Signed.apk
+C:\TRAtaMe_new\AppTRAtaMe\bin\Debug\Newtonsoft.Json.dll
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\AppTRAtaMe.dll
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\AppTRAtaMe.pdb
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\android\bin\AppTRAtaMe.AppTRAtaMe.apk
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\res\layout\login.xml
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\res\layout\episodio.xml
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\res\layout\foto.xml
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\res\values\strings.xml
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\res\drawable\checked.png
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\res\drawable\icon.png
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\res\drawable\img_hospital.gif
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\res\drawable\img_hospital_claro.gif
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\res\values\color.xml
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\R.cs.flag
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\uploadflags.txt
+C:\TRAtaMe_new\AppTRAtaMe\bin\Debug\Mono.Android.pdb
+C:\TRAtaMe_new\AppTRAtaMe\bin\Debug\mscorlib.pdb
+C:\TRAtaMe_new\AppTRAtaMe\bin\Debug\System.Core.pdb
+C:\TRAtaMe_new\AppTRAtaMe\bin\Debug\System.Data.pdb
+C:\TRAtaMe_new\AppTRAtaMe\bin\Debug\System.pdb
+C:\TRAtaMe_new\AppTRAtaMe\bin\Debug\System.EnterpriseServices.pdb
+C:\TRAtaMe_new\AppTRAtaMe\bin\Debug\System.Web.Services.pdb
+C:\TRAtaMe_new\AppTRAtaMe\bin\Debug\System.Xml.pdb
+C:\TRAtaMe_new\AppTRAtaMe\bin\Debug\System.Net.Http.pdb
+C:\TRAtaMe_new\AppTRAtaMe\bin\Debug\System.Runtime.Serialization.pdb
+C:\TRAtaMe_new\AppTRAtaMe\bin\Debug\System.ServiceModel.Internals.pdb
+C:\TRAtaMe_new\AppTRAtaMe\bin\Debug\System.Numerics.pdb
+C:\TRAtaMe_new\AppTRAtaMe\bin\Debug\System.Transactions.pdb
+C:\TRAtaMe_new\AppTRAtaMe\bin\Debug\Mono.Data.Tds.pdb
+C:\TRAtaMe_new\AppTRAtaMe\bin\Debug\Mono.Security.pdb
+C:\TRAtaMe_new\AppTRAtaMe\bin\Debug\System.ComponentModel.Composition.pdb
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\linksrc\Mono.Android.pdb
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\linksrc\mscorlib.pdb
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\linksrc\System.Core.pdb
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\linksrc\System.Data.pdb
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\linksrc\System.pdb
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\linksrc\System.EnterpriseServices.pdb
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\linksrc\System.Web.Services.pdb
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\linksrc\System.Xml.pdb
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\linksrc\System.Net.Http.pdb
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\linksrc\System.Runtime.Serialization.pdb
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\linksrc\System.ServiceModel.Internals.pdb
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\linksrc\System.Numerics.pdb
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\linksrc\System.Transactions.pdb
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\linksrc\Mono.Data.Tds.pdb
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\linksrc\Mono.Security.pdb
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\linksrc\System.ComponentModel.Composition.pdb
+C:\TRAtaMe_new\AppTRAtaMe\obj\Debug\linksrc\AppTRAtaMe.dll.mdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\bin\Debug\AppTRAtaMe.dll
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\bin\Debug\AppTRAtaMe.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\bin\Debug\AppTRAtaMe.AppTRAtaMe.apk
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\bin\Debug\AppTRAtaMe.AppTRAtaMe-Signed.apk
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\bin\Debug\Newtonsoft.Json.dll
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\AppTRAtaMe.csprojResolveAssemblyReference.cache
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\AppTRAtaMe.csproj.CoreCompileInputs.cache
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\AppTRAtaMe.csproj.CopyComplete
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\AppTRAtaMe.dll
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\AppTRAtaMe.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\android\bin\AppTRAtaMe.AppTRAtaMe.apk
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\res\layout\login.xml
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\res\layout\episodio.xml
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\res\layout\foto.xml
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\res\values\strings.xml
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\res\drawable\checked.png
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\res\drawable\icon.png
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\res\drawable\img_hospital.gif
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\res\drawable\img_hospital_claro.gif
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\res\values\color.xml
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\R.cs.flag
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\uploadflags.txt
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\bin\Debug\Mono.Android.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\bin\Debug\Mono.Data.Tds.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\bin\Debug\Mono.Security.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\bin\Debug\mscorlib.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\bin\Debug\System.ComponentModel.Composition.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\bin\Debug\System.Core.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\bin\Debug\System.Data.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\bin\Debug\System.EnterpriseServices.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\bin\Debug\System.Net.Http.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\bin\Debug\System.Numerics.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\bin\Debug\System.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\bin\Debug\System.Runtime.Serialization.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\bin\Debug\System.ServiceModel.Internals.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\bin\Debug\System.Transactions.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\bin\Debug\System.Web.Services.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\bin\Debug\System.Xml.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\bin\Debug\AppTRAtaMe.dll.mdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\android\assets\AppTRAtaMe.dll.mdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\android\assets\Mono.Android.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\android\assets\Mono.Data.Tds.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\android\assets\Mono.Security.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\android\assets\mscorlib.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\android\assets\System.ComponentModel.Composition.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\android\assets\System.Core.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\android\assets\System.Data.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\android\assets\System.EnterpriseServices.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\android\assets\System.Net.Http.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\android\assets\System.Numerics.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\android\assets\System.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\android\assets\System.Runtime.Serialization.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\android\assets\System.ServiceModel.Internals.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\android\assets\System.Transactions.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\android\assets\System.Web.Services.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\android\assets\System.Xml.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\linksrc\AppTRAtaMe.dll.mdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\linksrc\Mono.Android.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\linksrc\Mono.Data.Tds.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\linksrc\Mono.Security.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\linksrc\mscorlib.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\linksrc\System.ComponentModel.Composition.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\linksrc\System.Core.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\linksrc\System.Data.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\linksrc\System.EnterpriseServices.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\linksrc\System.Net.Http.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\linksrc\System.Numerics.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\linksrc\System.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\linksrc\System.Runtime.Serialization.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\linksrc\System.ServiceModel.Internals.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\linksrc\System.Transactions.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\linksrc\System.Web.Services.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\AppTRAtaMe\obj\Debug\linksrc\System.Xml.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\AppTRAtaMe.csprojResolveAssemblyReference.cache
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\AppTRAtaMe.csproj.CoreCompileInputs.cache
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\AppTRAtaMe.dll
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\AppTRAtaMe.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\bin\Debug\AppTRAtaMe.dll
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\bin\Debug\AppTRAtaMe.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\bin\Debug\AppTRAtaMe.AppTRAtaMe.apk
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\bin\Debug\AppTRAtaMe.AppTRAtaMe-Signed.apk
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\bin\Debug\Newtonsoft.Json.dll
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\AppTRAtaMe.csproj.CopyComplete
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\android\bin\AppTRAtaMe.AppTRAtaMe.apk
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\res\layout\login.xml
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\res\layout\episodio.xml
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\res\layout\foto.xml
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\res\values\strings.xml
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\res\drawable\checked.png
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\res\drawable\icon.png
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\res\drawable\img_hospital.gif
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\res\drawable\img_hospital_claro.gif
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\res\values\color.xml
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\R.cs.flag
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\uploadflags.txt
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\bin\Debug\Mono.Android.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\bin\Debug\Mono.Data.Tds.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\bin\Debug\Mono.Security.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\bin\Debug\mscorlib.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\bin\Debug\System.ComponentModel.Composition.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\bin\Debug\System.Core.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\bin\Debug\System.Data.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\bin\Debug\System.EnterpriseServices.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\bin\Debug\System.Net.Http.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\bin\Debug\System.Numerics.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\bin\Debug\System.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\bin\Debug\System.Runtime.Serialization.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\bin\Debug\System.ServiceModel.Internals.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\bin\Debug\System.Transactions.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\bin\Debug\System.Web.Services.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\bin\Debug\System.Xml.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\bin\Debug\AppTRAtaMe.dll.mdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\android\assets\AppTRAtaMe.dll.mdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\android\assets\Mono.Android.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\android\assets\Mono.Data.Tds.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\android\assets\Mono.Security.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\android\assets\mscorlib.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\android\assets\System.ComponentModel.Composition.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\android\assets\System.Core.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\android\assets\System.Data.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\android\assets\System.EnterpriseServices.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\android\assets\System.Net.Http.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\android\assets\System.Numerics.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\android\assets\System.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\android\assets\System.Runtime.Serialization.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\android\assets\System.ServiceModel.Internals.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\android\assets\System.Transactions.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\android\assets\System.Web.Services.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\android\assets\System.Xml.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\linksrc\AppTRAtaMe.dll.mdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\linksrc\Mono.Android.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\linksrc\Mono.Data.Tds.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\linksrc\Mono.Security.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\linksrc\mscorlib.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\linksrc\System.ComponentModel.Composition.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\linksrc\System.Core.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\linksrc\System.Data.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\linksrc\System.EnterpriseServices.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\linksrc\System.Net.Http.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\linksrc\System.Numerics.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\linksrc\System.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\linksrc\System.Runtime.Serialization.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\linksrc\System.ServiceModel.Internals.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\linksrc\System.Transactions.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\linksrc\System.Web.Services.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\linksrc\System.Xml.pdb
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\bin\Debug\AppTRAtaMe.dll
+C:\Users\isabel\Documents\UNIR\TFG\app y web\Proyecto TRAtaMe\AppTRAtaMe\obj\Debug\linksrc\AppTRAtaMe.dll.mdb
