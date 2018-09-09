@@ -1,0 +1,14 @@
+<!--
+Autora: Isabel Piñuel González 
+Este proyecto es parte del TFG del Curso de Adaptación al Grado de Informática
+Universidad Internacional de la Rioja (UNIR)
+Este código se ofrece bajo licencia MIT
+-->
+<!-- Es necesario indicar la IP del servidor donde tenemos publicado el WS-->
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://ip:puerto/telediagnosticoWS.asmx?disco" filename="telediagnosticoWS.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://ip:puerto/telediagnosticoWS.asmx?wsdl" filename="telediagnosticoWS.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>

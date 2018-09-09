@@ -1,0 +1,11 @@
+C:\Users\isabel\Documents\GitHub\TRAtaMe\TRAtaMeWS\bin\TRAtaMeWS.dll.config
+C:\Users\isabel\Documents\GitHub\TRAtaMe\TRAtaMeWS\bin\TRAtaMeWS.dll
+C:\Users\isabel\Documents\GitHub\TRAtaMe\TRAtaMeWS\bin\TRAtaMeWS.pdb
+C:\Users\isabel\Documents\GitHub\TRAtaMe\TRAtaMeWS\bin\TRAtaMeWS.xml
+C:\Users\isabel\Documents\GitHub\TRAtaMe\TRAtaMeWS\obj\Debug\TRAtaMeWS.vbprojResolveAssemblyReference.cache
+C:\Users\isabel\Documents\GitHub\TRAtaMe\TRAtaMeWS\obj\Debug\TRAtaMeWS.Resources.resources
+C:\Users\isabel\Documents\GitHub\TRAtaMe\TRAtaMeWS\obj\Debug\TRAtaMeWS.vbproj.GenerateResource.cache
+C:\Users\isabel\Documents\GitHub\TRAtaMe\TRAtaMeWS\obj\Debug\TRAtaMeWS.vbproj.CoreCompileInputs.cache
+C:\Users\isabel\Documents\GitHub\TRAtaMe\TRAtaMeWS\obj\Debug\TRAtaMeWS.dll
+C:\Users\isabel\Documents\GitHub\TRAtaMe\TRAtaMeWS\obj\Debug\TRAtaMeWS.xml
+C:\Users\isabel\Documents\GitHub\TRAtaMe\TRAtaMeWS\obj\Debug\TRAtaMeWS.pdb

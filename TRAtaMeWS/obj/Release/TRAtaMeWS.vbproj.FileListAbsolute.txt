@@ -1,0 +1,11 @@
+C:\TRAtaMe\TRAtaMeWS\TRAtaMeWS\bin\TRAtaMeWS.dll
+C:\TRAtaMe\TRAtaMeWS\TRAtaMeWS\bin\TRAtaMeWS.XmlSerializers.dll
+C:\TRAtaMe\TRAtaMeWS\TRAtaMeWS\bin\TRAtaMeWS.pdb
+C:\TRAtaMe\TRAtaMeWS\TRAtaMeWS\bin\TRAtaMeWS.xml
+C:\TRAtaMe\TRAtaMeWS\TRAtaMeWS\obj\Release\ResolveAssemblyReference.cache
+C:\TRAtaMe\TRAtaMeWS\TRAtaMeWS\obj\Release\TRAtaMeWS.Resources.resources
+C:\TRAtaMe\TRAtaMeWS\TRAtaMeWS\obj\Release\TRAtaMeWS.vbproj.GenerateResource.Cache
+C:\TRAtaMe\TRAtaMeWS\TRAtaMeWS\obj\Release\TRAtaMeWS.dll
+C:\TRAtaMe\TRAtaMeWS\TRAtaMeWS\obj\Release\TRAtaMeWS.xml
+C:\TRAtaMe\TRAtaMeWS\TRAtaMeWS\obj\Release\TRAtaMeWS.pdb
+C:\TRAtaMe\TRAtaMeWS\TRAtaMeWS\obj\Release\TRAtaMeWS.XmlSerializers.dll

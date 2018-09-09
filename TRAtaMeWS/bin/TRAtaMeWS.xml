@@ -1,0 +1,350 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TRAtaMeWS
+</name>
+</assembly>
+<members>
+<member name="T:TRAtaMeWS.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:TRAtaMeWS.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:TRAtaMeWS.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="T:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.#ctor">
+<remarks/>
+</member>
+<member name="E:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.ValidarUsuarioCompleted">
+<remarks/>
+</member>
+<member name="E:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.RecuperarUsuarioCompleted">
+<remarks/>
+</member>
+<member name="E:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.ValidarRecuperarUsuarioCompleted">
+<remarks/>
+</member>
+<member name="E:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.RecuperarUsuarioExtendidoCompleted">
+<remarks/>
+</member>
+<member name="E:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.PerteneceUsuarioAGrupoCompleted">
+<remarks/>
+</member>
+<member name="E:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.ObtenerGruposPorUsuarioCompleted">
+<remarks/>
+</member>
+<member name="E:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.ObtenerOUUsuarioCompleted">
+<remarks/>
+</member>
+<member name="E:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.InfoProfesionalUsuarioCompleted">
+<remarks/>
+</member>
+<member name="E:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.CambiarPasswordCompleted">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.ValidarUsuario(System.String,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.ValidarUsuarioAsync(System.String,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.ValidarUsuarioAsync(System.String,System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.RecuperarUsuario(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.RecuperarUsuarioAsync(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.RecuperarUsuarioAsync(System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.ValidarRecuperarUsuario(System.String,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.ValidarRecuperarUsuarioAsync(System.String,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.ValidarRecuperarUsuarioAsync(System.String,System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.RecuperarUsuarioExtendido(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.RecuperarUsuarioExtendidoAsync(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.RecuperarUsuarioExtendidoAsync(System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.PerteneceUsuarioAGrupo(System.String,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.PerteneceUsuarioAGrupoAsync(System.String,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.PerteneceUsuarioAGrupoAsync(System.String,System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.ObtenerGruposPorUsuario(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.ObtenerGruposPorUsuarioAsync(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.ObtenerGruposPorUsuarioAsync(System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.ObtenerOUUsuario(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.ObtenerOUUsuarioAsync(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.ObtenerOUUsuarioAsync(System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.InfoProfesionalUsuario(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.InfoProfesionalUsuarioAsync(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.InfoProfesionalUsuarioAsync(System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.CambiarPassword(System.String,System.String,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.CambiarPasswordAsync(System.String,System.String,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.CambiarPasswordAsync(System.String,System.String,System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:TRAtaMeWS.org.madrid.salud.gestionai.ServicioDA.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:TRAtaMeWS.org.madrid.salud.gestionai.ResultadoLogin">
+<remarks/>
+</member>
+<member name="F:TRAtaMeWS.org.madrid.salud.gestionai.ResultadoLogin.LOGIN_OK">
+<remarks/>
+</member>
+<member name="F:TRAtaMeWS.org.madrid.salud.gestionai.ResultadoLogin.LOGIN_NO_EXISTE">
+<remarks/>
+</member>
+<member name="F:TRAtaMeWS.org.madrid.salud.gestionai.ResultadoLogin.LOGIN_INACTIVO">
+<remarks/>
+</member>
+<member name="F:TRAtaMeWS.org.madrid.salud.gestionai.ResultadoLogin.LOGIN_BLOQUEADO">
+<remarks/>
+</member>
+<member name="F:TRAtaMeWS.org.madrid.salud.gestionai.ResultadoLogin.PASSWORD_CADUCADA">
+<remarks/>
+</member>
+<member name="F:TRAtaMeWS.org.madrid.salud.gestionai.ResultadoLogin.PASSWORD_INCORRECTA">
+<remarks/>
+</member>
+<member name="T:TRAtaMeWS.org.madrid.salud.gestionai.Usuario">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.Usuario.nombre">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.Usuario.apellidos">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.Usuario.login">
+<remarks/>
+</member>
+<member name="T:TRAtaMeWS.org.madrid.salud.gestionai.InfoProfesional">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.InfoProfesional.nombre">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.InfoProfesional.apellidos">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.InfoProfesional.login">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.InfoProfesional.dni">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.InfoProfesional.direccion_general">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.InfoProfesional.subdireccion_gerencia">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.InfoProfesional.ambito">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.InfoProfesional.unidad_centro">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.InfoProfesional.servicio">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.InfoProfesional.categoria">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.InfoProfesional.puesto">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.InfoProfesional.especialidad">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.InfoProfesional.empresa">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.InfoProfesional.eventual">
+<remarks/>
+</member>
+<member name="T:TRAtaMeWS.org.madrid.salud.gestionai.UsuarioExtendido">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.UsuarioExtendido.nombre">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.UsuarioExtendido.apellidos">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.UsuarioExtendido.login">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.UsuarioExtendido.correo">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.UsuarioExtendido.resLogin">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.UsuarioExtendido.OU">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.UsuarioExtendido.fechaCaducaPassword">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.UsuarioExtendido.grupos">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.UsuarioExtendido.tienePreguntas">
+<remarks/>
+</member>
+<member name="T:TRAtaMeWS.org.madrid.salud.gestionai.ResultadoCambioPassword">
+<remarks/>
+</member>
+<member name="F:TRAtaMeWS.org.madrid.salud.gestionai.ResultadoCambioPassword.OK">
+<remarks/>
+</member>
+<member name="F:TRAtaMeWS.org.madrid.salud.gestionai.ResultadoCambioPassword.USUARIO_INEXISTENTE">
+<remarks/>
+</member>
+<member name="F:TRAtaMeWS.org.madrid.salud.gestionai.ResultadoCambioPassword.PASSWORD_ANTIGUA_INVALIDA">
+<remarks/>
+</member>
+<member name="F:TRAtaMeWS.org.madrid.salud.gestionai.ResultadoCambioPassword.PASSWORD_NUEVA_INCORRECTA">
+<remarks/>
+</member>
+<member name="F:TRAtaMeWS.org.madrid.salud.gestionai.ResultadoCambioPassword.ERROR">
+<remarks/>
+</member>
+<member name="T:TRAtaMeWS.org.madrid.salud.gestionai.ValidarUsuarioCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:TRAtaMeWS.org.madrid.salud.gestionai.ValidarUsuarioCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.ValidarUsuarioCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:TRAtaMeWS.org.madrid.salud.gestionai.RecuperarUsuarioCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:TRAtaMeWS.org.madrid.salud.gestionai.RecuperarUsuarioCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.RecuperarUsuarioCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:TRAtaMeWS.org.madrid.salud.gestionai.ValidarRecuperarUsuarioCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:TRAtaMeWS.org.madrid.salud.gestionai.ValidarRecuperarUsuarioCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.ValidarRecuperarUsuarioCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:TRAtaMeWS.org.madrid.salud.gestionai.RecuperarUsuarioExtendidoCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:TRAtaMeWS.org.madrid.salud.gestionai.RecuperarUsuarioExtendidoCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.RecuperarUsuarioExtendidoCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:TRAtaMeWS.org.madrid.salud.gestionai.PerteneceUsuarioAGrupoCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:TRAtaMeWS.org.madrid.salud.gestionai.PerteneceUsuarioAGrupoCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.PerteneceUsuarioAGrupoCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:TRAtaMeWS.org.madrid.salud.gestionai.ObtenerGruposPorUsuarioCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:TRAtaMeWS.org.madrid.salud.gestionai.ObtenerGruposPorUsuarioCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.ObtenerGruposPorUsuarioCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:TRAtaMeWS.org.madrid.salud.gestionai.ObtenerOUUsuarioCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:TRAtaMeWS.org.madrid.salud.gestionai.ObtenerOUUsuarioCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.ObtenerOUUsuarioCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:TRAtaMeWS.org.madrid.salud.gestionai.InfoProfesionalUsuarioCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:TRAtaMeWS.org.madrid.salud.gestionai.InfoProfesionalUsuarioCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.InfoProfesionalUsuarioCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:TRAtaMeWS.org.madrid.salud.gestionai.CambiarPasswordCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:TRAtaMeWS.org.madrid.salud.gestionai.CambiarPasswordCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:TRAtaMeWS.org.madrid.salud.gestionai.CambiarPasswordCompletedEventArgs.Result">
+<remarks/>
+</member>
+</members>
+</doc>

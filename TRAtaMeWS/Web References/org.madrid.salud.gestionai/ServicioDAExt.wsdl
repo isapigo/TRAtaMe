@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="https://gestionai.salud.madrid.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="https://gestionai.salud.madrid.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Permite realizar las operaciones básicas sobre Directorio Activo</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="https://gestionai.salud.madrid.org/">
+      <s:element name="ValidarUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidarUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ValidarUsuarioResult" type="tns:ResultadoLogin" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="ResultadoLogin">
+        <s:restriction base="s:string">
+          <s:enumeration value="LOGIN_OK" />
+          <s:enumeration value="LOGIN_NO_EXISTE" />
+          <s:enumeration value="LOGIN_INACTIVO" />
+          <s:enumeration value="LOGIN_BLOQUEADO" />
+          <s:enumeration value="PASSWORD_CADUCADA" />
+          <s:enumeration value="PASSWORD_INCORRECTA" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="RecuperarUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecuperarUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RecuperarUsuarioResult" type="tns:Usuario" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Usuario">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="apellidos" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ValidarRecuperarUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidarRecuperarUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidarRecuperarUsuarioResult" type="tns:UsuarioExtendido" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UsuarioExtendido">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="apellidos" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="correo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="resLogin" type="tns:ResultadoLogin" />
+          <s:element minOccurs="0" maxOccurs="1" name="OU" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fechaCaducaPassword" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="grupos" type="tns:ArrayOfString" />
+          <s:element minOccurs="1" maxOccurs="1" name="tienePreguntas" nillable="true" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RecuperarUsuarioExtendido">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecuperarUsuarioExtendidoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RecuperarUsuarioExtendidoResult" type="tns:UsuarioExtendido" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PerteneceUsuarioAGrupo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="grupo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PerteneceUsuarioAGrupoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PerteneceUsuarioAGrupoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerGruposPorUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerGruposPorUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerGruposPorUsuarioResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerOUUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerOUUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerOUUsuarioResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InfoProfesionalUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InfoProfesionalUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InfoProfesionalUsuarioResult" type="tns:InfoProfesional" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="InfoProfesional">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="apellidos" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dni" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="direccion_general" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="subdireccion_gerencia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ambito" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="unidad_centro" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="servicio" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="categoria" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="puesto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="especialidad" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="empresa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="eventual" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CambiarPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PasswordAntigua" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PasswordNueva" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CambiarPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CambiarPasswordResult" type="tns:ResultadoCambioPassword" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="ResultadoCambioPassword">
+        <s:restriction base="s:string">
+          <s:enumeration value="OK" />
+          <s:enumeration value="USUARIO_INEXISTENTE" />
+          <s:enumeration value="PASSWORD_ANTIGUA_INVALIDA" />
+          <s:enumeration value="PASSWORD_NUEVA_INCORRECTA" />
+          <s:enumeration value="ERROR" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ValidarUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="ValidarUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecuperarUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:RecuperarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="RecuperarUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:RecuperarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidarRecuperarUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidarRecuperarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="ValidarRecuperarUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidarRecuperarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecuperarUsuarioExtendidoSoapIn">
+    <wsdl:part name="parameters" element="tns:RecuperarUsuarioExtendido" />
+  </wsdl:message>
+  <wsdl:message name="RecuperarUsuarioExtendidoSoapOut">
+    <wsdl:part name="parameters" element="tns:RecuperarUsuarioExtendidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="PerteneceUsuarioAGrupoSoapIn">
+    <wsdl:part name="parameters" element="tns:PerteneceUsuarioAGrupo" />
+  </wsdl:message>
+  <wsdl:message name="PerteneceUsuarioAGrupoSoapOut">
+    <wsdl:part name="parameters" element="tns:PerteneceUsuarioAGrupoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerGruposPorUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerGruposPorUsuario" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerGruposPorUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerGruposPorUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerOUUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerOUUsuario" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerOUUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerOUUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="InfoProfesionalUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:InfoProfesionalUsuario" />
+  </wsdl:message>
+  <wsdl:message name="InfoProfesionalUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:InfoProfesionalUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="CambiarPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:CambiarPassword" />
+  </wsdl:message>
+  <wsdl:message name="CambiarPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:CambiarPasswordResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServicioDASoap">
+    <wsdl:operation name="ValidarUsuario">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Valida el usuario y la password en el Directorio Activo</wsdl:documentation>
+      <wsdl:input message="tns:ValidarUsuarioSoapIn" />
+      <wsdl:output message="tns:ValidarUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecuperarUsuario">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recuperar el usuario indicado del Directorio Activo</wsdl:documentation>
+      <wsdl:input message="tns:RecuperarUsuarioSoapIn" />
+      <wsdl:output message="tns:RecuperarUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarRecuperarUsuario">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Validar y Recuperar el usuario indicado del Directorio Activo</wsdl:documentation>
+      <wsdl:input message="tns:ValidarRecuperarUsuarioSoapIn" />
+      <wsdl:output message="tns:ValidarRecuperarUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecuperarUsuarioExtendido">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recuperar el usuario indicado del Directorio Activo (con información extendida)</wsdl:documentation>
+      <wsdl:input message="tns:RecuperarUsuarioExtendidoSoapIn" />
+      <wsdl:output message="tns:RecuperarUsuarioExtendidoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PerteneceUsuarioAGrupo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Indica si el usuario pertenece al grupo</wsdl:documentation>
+      <wsdl:input message="tns:PerteneceUsuarioAGrupoSoapIn" />
+      <wsdl:output message="tns:PerteneceUsuarioAGrupoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerGruposPorUsuario">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Devuelve el listado de grupos a los que pertenece el usuario</wsdl:documentation>
+      <wsdl:input message="tns:ObtenerGruposPorUsuarioSoapIn" />
+      <wsdl:output message="tns:ObtenerGruposPorUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerOUUsuario">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Devuelve la Unidad Organizativa (OU) del usuario indicado del Directorio Activo</wsdl:documentation>
+      <wsdl:input message="tns:ObtenerOUUsuarioSoapIn" />
+      <wsdl:output message="tns:ObtenerOUUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InfoProfesionalUsuario">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Devuelve la información profesional del usuario indicado del Directorio Activo</wsdl:documentation>
+      <wsdl:input message="tns:InfoProfesionalUsuarioSoapIn" />
+      <wsdl:output message="tns:InfoProfesionalUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CambiarPassword">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Permite cambiar la password de un usuario.</wsdl:documentation>
+      <wsdl:input message="tns:CambiarPasswordSoapIn" />
+      <wsdl:output message="tns:CambiarPasswordSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServicioDASoap" type="tns:ServicioDASoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidarUsuario">
+      <soap:operation soapAction="https://gestionai.salud.madrid.org/ValidarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecuperarUsuario">
+      <soap:operation soapAction="https://gestionai.salud.madrid.org/RecuperarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarRecuperarUsuario">
+      <soap:operation soapAction="https://gestionai.salud.madrid.org/ValidarRecuperarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecuperarUsuarioExtendido">
+      <soap:operation soapAction="https://gestionai.salud.madrid.org/RecuperarUsuarioExtendido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PerteneceUsuarioAGrupo">
+      <soap:operation soapAction="https://gestionai.salud.madrid.org/PerteneceUsuarioAGrupo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerGruposPorUsuario">
+      <soap:operation soapAction="https://gestionai.salud.madrid.org/ObtenerGruposPorUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerOUUsuario">
+      <soap:operation soapAction="https://gestionai.salud.madrid.org/ObtenerOUUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InfoProfesionalUsuario">
+      <soap:operation soapAction="https://gestionai.salud.madrid.org/InfoProfesionalUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambiarPassword">
+      <soap:operation soapAction="https://gestionai.salud.madrid.org/CambiarPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServicioDASoap12" type="tns:ServicioDASoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidarUsuario">
+      <soap12:operation soapAction="https://gestionai.salud.madrid.org/ValidarUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecuperarUsuario">
+      <soap12:operation soapAction="https://gestionai.salud.madrid.org/RecuperarUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarRecuperarUsuario">
+      <soap12:operation soapAction="https://gestionai.salud.madrid.org/ValidarRecuperarUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecuperarUsuarioExtendido">
+      <soap12:operation soapAction="https://gestionai.salud.madrid.org/RecuperarUsuarioExtendido" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PerteneceUsuarioAGrupo">
+      <soap12:operation soapAction="https://gestionai.salud.madrid.org/PerteneceUsuarioAGrupo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerGruposPorUsuario">
+      <soap12:operation soapAction="https://gestionai.salud.madrid.org/ObtenerGruposPorUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerOUUsuario">
+      <soap12:operation soapAction="https://gestionai.salud.madrid.org/ObtenerOUUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InfoProfesionalUsuario">
+      <soap12:operation soapAction="https://gestionai.salud.madrid.org/InfoProfesionalUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambiarPassword">
+      <soap12:operation soapAction="https://gestionai.salud.madrid.org/CambiarPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicioDA">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Permite realizar las operaciones básicas sobre Directorio Activo</wsdl:documentation>
+    <wsdl:port name="ServicioDASoap" binding="tns:ServicioDASoap">
+      <soap:address location="https://gestionai.salud.madrid.org/ServiciosGestionAI/ServicioDAExt.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServicioDASoap12" binding="tns:ServicioDASoap12">
+      <soap12:address location="https://gestionai.salud.madrid.org/ServiciosGestionAI/ServicioDAExt.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

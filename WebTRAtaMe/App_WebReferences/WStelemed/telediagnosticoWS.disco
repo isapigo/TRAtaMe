@@ -1,0 +1,13 @@
+<!--
+Autora: Isabel Piñuel González 
+Este proyecto es parte del TFG del Curso de Adaptación al Grado de Informática
+Universidad Internacional de la Rioja (UNIR)
+Este código se ofrece bajo licencia MIT
+-->
+<!-- Es necesario indicar la IP del servidor donde tenemos publicado el WS-->
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://ip:puerto/telediagnosticoWS.asmx?wsdl" docRef="http://ip:puerto/telediagnosticoWS.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="ip_puerto/telediagnosticoWS.asmx" xmlns:q1="http://hcrtelediagnosticoWS" binding="q1:telediagnosticoWSSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://ip:puerto/telediagnosticoWS.asmx" xmlns:q2="http://hcrtelediagnosticoWS" binding="q2:telediagnosticoWSSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

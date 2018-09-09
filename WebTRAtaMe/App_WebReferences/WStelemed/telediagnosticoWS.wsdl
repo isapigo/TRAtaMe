@@ -1,0 +1,1369 @@
+<!--
+Autora: Isabel Piñuel González 
+Este proyecto es parte del TFG del Curso de Adaptación al Grado de Informática
+Universidad Internacional de la Rioja (UNIR)
+Este código se ofrece bajo licencia MIT
+-->
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://hcrtelediagnosticoWS" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://hcrtelediagnosticoWS" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://hcrtelediagnosticoWS">
+      <s:element name="valida_entrada">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="valida_entradaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="valida_entradaResult" type="tns:cls_usuario" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="cls_usuario">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="codser" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="permiso" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="origen" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dni" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="codemp" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="unidad" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="puesto" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="codigo" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="dame_img_aud">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tipo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="el_Where_Order" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="datos_informacion" type="tns:cls_informacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="cls_informacion">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id_episodio" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="id_paciente" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nhc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="codser" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="fecha" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="doctor" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="pregunta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="fch_resp" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="respuesta" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="audios" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="fotos" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="videos" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="veo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="veo_tipo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="veo_enlace" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="oigo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="oigo_enlace" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="dame_img_audResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dame_img_audResult" type="tns:cls_informacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="toda_informacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="episodio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paciente" type="tns:cls_paciente" />
+            <s:element minOccurs="0" maxOccurs="1" name="informacion" type="tns:cls_informacion" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="cls_paciente">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id_paciente" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nhc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre_com" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dni" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cipa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="telefono" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecnac" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="domicilio" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="numero" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="codpost" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="codpro" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="provincia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="codmun" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="municipio" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="apellido1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="apellido2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="numtel2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipodom" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="calle" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="toda_informacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="toda_informacionResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="paciente" type="tns:cls_paciente" />
+            <s:element minOccurs="0" maxOccurs="1" name="informacion" type="tns:cls_informacion" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="datos_paciente_HCIS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nhc" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="dni" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="datos_paciente_HCISResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="datos_paciente_HCISResult" type="tns:cls_paciente" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="actualiza_paciente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="datos_paciente" type="tns:cls_paciente" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="actualiza_pacienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="actualiza_pacienteResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="datos_paciente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="episodio" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="id_paciente" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="datos_pacienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="datos_pacienteResult" type="tns:cls_paciente" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="nuevo_paciente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="datos_paciente" type="tns:cls_paciente" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="nuevo_pacienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nuevo_pacienteResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="datos_paciente" type="tns:cls_paciente" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="nuevo_episodio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="datos_usuario" type="tns:cls_usuario" />
+            <s:element minOccurs="0" maxOccurs="1" name="datos_paciente" type="tns:cls_paciente" />
+            <s:element minOccurs="0" maxOccurs="1" name="datos_informacion" type="tns:cls_informacion" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="nuevo_episodioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nuevo_episodioResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="datos_paciente" type="tns:cls_paciente" />
+            <s:element minOccurs="0" maxOccurs="1" name="datos_informacion" type="tns:cls_informacion" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="nuevo_fichero">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tipo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="extension" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="datos_usuario" type="tns:cls_usuario" />
+            <s:element minOccurs="0" maxOccurs="1" name="datos_paciente" type="tns:cls_paciente" />
+            <s:element minOccurs="0" maxOccurs="1" name="datos_informacion" type="tns:cls_informacion" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="nuevo_ficheroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nuevo_ficheroResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="datos_informacion" type="tns:cls_informacion" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="preguntar_a_gfh">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="episodio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="codser" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="preguntar_a_gfhResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="preguntar_a_gfhResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="grabar_textos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="datos_usuario" type="tns:cls_usuario" />
+            <s:element minOccurs="0" maxOccurs="1" name="datos_paciente" type="tns:cls_paciente" />
+            <s:element minOccurs="0" maxOccurs="1" name="datos_informacion" type="tns:cls_informacion" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_SQL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="grabar_textosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="grabar_textosResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mira_nulo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dato" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mira_nuloResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mira_nuloResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="inserta_log">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="id_solicitud" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="texto" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="inserta_logResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="inserta_logResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="texto" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="existe_paciente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NHC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="existe_pacienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="existe_pacienteResult" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="existe_episodio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idpaciente" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="existe_episodioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="existe_episodioResult" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dame_episodios_paciente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idpaciente" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="listax" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="listan" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dame_episodios_pacienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="dame_episodios_pacienteResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="listax" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="listan" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dame_GFH">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="servicio" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dame_GFHResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dame_GFHResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dame_servicios">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="listax" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="listan" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dame_serviciosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="dame_serviciosResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="listax" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="listan" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dame_respuestas_episodio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idepisodio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="listax" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="listar" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dame_respuestas_episodioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="dame_respuestas_episodioResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="listax" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="listar" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dame_servicios_episodio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="episodio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="listax" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="listan" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dame_servicios_episodioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="dame_servicios_episodioResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="listax" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="listan" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="elimina_pregunta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="episodio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="codser" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="elimina_preguntaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="elimina_preguntaResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="elimina_episodio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="episodio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="elimina_episodioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="elimina_episodioResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="elimina_fichero">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tipo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="datos_informacion" type="tns:cls_informacion" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="elimina_ficheroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="elimina_ficheroResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="datos_informacion" type="tns:cls_informacion" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="control_respuestas">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="episodio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="lista_si" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="lista_no" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="lista_ya" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="control_respuestasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="control_respuestasResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="lista_si" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="lista_no" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="lista_ya" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dame_id_multimed">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tipo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="datos_informacion" type="tns:cls_informacion" />
+            <s:element minOccurs="0" maxOccurs="1" name="min_max" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dame_id_multimedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="dame_id_multimedResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="son_multimedia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="informacion" type="tns:cls_informacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="son_multimediaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="son_multimediaResult" type="tns:cls_informacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mover_fichero">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fic_entrada" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="tipo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="extension" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="datos_usuario" type="tns:cls_usuario" />
+            <s:element minOccurs="0" maxOccurs="1" name="datos_paciente" type="tns:cls_paciente" />
+            <s:element minOccurs="0" maxOccurs="1" name="datos_informacion" type="tns:cls_informacion" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mover_ficheroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mover_ficheroResult" />
+            <s:element minOccurs="0" maxOccurs="1" name="datos_informacion" type="tns:cls_informacion" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="traer_fichero">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tipo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="datos_informacion" type="tns:cls_informacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="traer_ficheroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="traer_ficheroResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="valida_entradaSoapIn">
+    <wsdl:part name="parameters" element="tns:valida_entrada" />
+  </wsdl:message>
+  <wsdl:message name="valida_entradaSoapOut">
+    <wsdl:part name="parameters" element="tns:valida_entradaResponse" />
+  </wsdl:message>
+  <wsdl:message name="dame_img_audSoapIn">
+    <wsdl:part name="parameters" element="tns:dame_img_aud" />
+  </wsdl:message>
+  <wsdl:message name="dame_img_audSoapOut">
+    <wsdl:part name="parameters" element="tns:dame_img_audResponse" />
+  </wsdl:message>
+  <wsdl:message name="toda_informacionSoapIn">
+    <wsdl:part name="parameters" element="tns:toda_informacion" />
+  </wsdl:message>
+  <wsdl:message name="toda_informacionSoapOut">
+    <wsdl:part name="parameters" element="tns:toda_informacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="datos_paciente_HCISSoapIn">
+    <wsdl:part name="parameters" element="tns:datos_paciente_HCIS" />
+  </wsdl:message>
+  <wsdl:message name="datos_paciente_HCISSoapOut">
+    <wsdl:part name="parameters" element="tns:datos_paciente_HCISResponse" />
+  </wsdl:message>
+  <wsdl:message name="actualiza_pacienteSoapIn">
+    <wsdl:part name="parameters" element="tns:actualiza_paciente" />
+  </wsdl:message>
+  <wsdl:message name="actualiza_pacienteSoapOut">
+    <wsdl:part name="parameters" element="tns:actualiza_pacienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="datos_pacienteSoapIn">
+    <wsdl:part name="parameters" element="tns:datos_paciente" />
+  </wsdl:message>
+  <wsdl:message name="datos_pacienteSoapOut">
+    <wsdl:part name="parameters" element="tns:datos_pacienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="nuevo_pacienteSoapIn">
+    <wsdl:part name="parameters" element="tns:nuevo_paciente" />
+  </wsdl:message>
+  <wsdl:message name="nuevo_pacienteSoapOut">
+    <wsdl:part name="parameters" element="tns:nuevo_pacienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="nuevo_episodioSoapIn">
+    <wsdl:part name="parameters" element="tns:nuevo_episodio" />
+  </wsdl:message>
+  <wsdl:message name="nuevo_episodioSoapOut">
+    <wsdl:part name="parameters" element="tns:nuevo_episodioResponse" />
+  </wsdl:message>
+  <wsdl:message name="nuevo_ficheroSoapIn">
+    <wsdl:part name="parameters" element="tns:nuevo_fichero" />
+  </wsdl:message>
+  <wsdl:message name="nuevo_ficheroSoapOut">
+    <wsdl:part name="parameters" element="tns:nuevo_ficheroResponse" />
+  </wsdl:message>
+  <wsdl:message name="preguntar_a_gfhSoapIn">
+    <wsdl:part name="parameters" element="tns:preguntar_a_gfh" />
+  </wsdl:message>
+  <wsdl:message name="preguntar_a_gfhSoapOut">
+    <wsdl:part name="parameters" element="tns:preguntar_a_gfhResponse" />
+  </wsdl:message>
+  <wsdl:message name="grabar_textosSoapIn">
+    <wsdl:part name="parameters" element="tns:grabar_textos" />
+  </wsdl:message>
+  <wsdl:message name="grabar_textosSoapOut">
+    <wsdl:part name="parameters" element="tns:grabar_textosResponse" />
+  </wsdl:message>
+  <wsdl:message name="mira_nuloSoapIn">
+    <wsdl:part name="parameters" element="tns:mira_nulo" />
+  </wsdl:message>
+  <wsdl:message name="mira_nuloSoapOut">
+    <wsdl:part name="parameters" element="tns:mira_nuloResponse" />
+  </wsdl:message>
+  <wsdl:message name="inserta_logSoapIn">
+    <wsdl:part name="parameters" element="tns:inserta_log" />
+  </wsdl:message>
+  <wsdl:message name="inserta_logSoapOut">
+    <wsdl:part name="parameters" element="tns:inserta_logResponse" />
+  </wsdl:message>
+  <wsdl:message name="existe_pacienteSoapIn">
+    <wsdl:part name="parameters" element="tns:existe_paciente" />
+  </wsdl:message>
+  <wsdl:message name="existe_pacienteSoapOut">
+    <wsdl:part name="parameters" element="tns:existe_pacienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="existe_episodioSoapIn">
+    <wsdl:part name="parameters" element="tns:existe_episodio" />
+  </wsdl:message>
+  <wsdl:message name="existe_episodioSoapOut">
+    <wsdl:part name="parameters" element="tns:existe_episodioResponse" />
+  </wsdl:message>
+  <wsdl:message name="dame_episodios_pacienteSoapIn">
+    <wsdl:part name="parameters" element="tns:dame_episodios_paciente" />
+  </wsdl:message>
+  <wsdl:message name="dame_episodios_pacienteSoapOut">
+    <wsdl:part name="parameters" element="tns:dame_episodios_pacienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="dame_GFHSoapIn">
+    <wsdl:part name="parameters" element="tns:dame_GFH" />
+  </wsdl:message>
+  <wsdl:message name="dame_GFHSoapOut">
+    <wsdl:part name="parameters" element="tns:dame_GFHResponse" />
+  </wsdl:message>
+  <wsdl:message name="dame_serviciosSoapIn">
+    <wsdl:part name="parameters" element="tns:dame_servicios" />
+  </wsdl:message>
+  <wsdl:message name="dame_serviciosSoapOut">
+    <wsdl:part name="parameters" element="tns:dame_serviciosResponse" />
+  </wsdl:message>
+  <wsdl:message name="dame_respuestas_episodioSoapIn">
+    <wsdl:part name="parameters" element="tns:dame_respuestas_episodio" />
+  </wsdl:message>
+  <wsdl:message name="dame_respuestas_episodioSoapOut">
+    <wsdl:part name="parameters" element="tns:dame_respuestas_episodioResponse" />
+  </wsdl:message>
+  <wsdl:message name="dame_servicios_episodioSoapIn">
+    <wsdl:part name="parameters" element="tns:dame_servicios_episodio" />
+  </wsdl:message>
+  <wsdl:message name="dame_servicios_episodioSoapOut">
+    <wsdl:part name="parameters" element="tns:dame_servicios_episodioResponse" />
+  </wsdl:message>
+  <wsdl:message name="elimina_preguntaSoapIn">
+    <wsdl:part name="parameters" element="tns:elimina_pregunta" />
+  </wsdl:message>
+  <wsdl:message name="elimina_preguntaSoapOut">
+    <wsdl:part name="parameters" element="tns:elimina_preguntaResponse" />
+  </wsdl:message>
+  <wsdl:message name="elimina_episodioSoapIn">
+    <wsdl:part name="parameters" element="tns:elimina_episodio" />
+  </wsdl:message>
+  <wsdl:message name="elimina_episodioSoapOut">
+    <wsdl:part name="parameters" element="tns:elimina_episodioResponse" />
+  </wsdl:message>
+  <wsdl:message name="elimina_ficheroSoapIn">
+    <wsdl:part name="parameters" element="tns:elimina_fichero" />
+  </wsdl:message>
+  <wsdl:message name="elimina_ficheroSoapOut">
+    <wsdl:part name="parameters" element="tns:elimina_ficheroResponse" />
+  </wsdl:message>
+  <wsdl:message name="control_respuestasSoapIn">
+    <wsdl:part name="parameters" element="tns:control_respuestas" />
+  </wsdl:message>
+  <wsdl:message name="control_respuestasSoapOut">
+    <wsdl:part name="parameters" element="tns:control_respuestasResponse" />
+  </wsdl:message>
+  <wsdl:message name="dame_id_multimedSoapIn">
+    <wsdl:part name="parameters" element="tns:dame_id_multimed" />
+  </wsdl:message>
+  <wsdl:message name="dame_id_multimedSoapOut">
+    <wsdl:part name="parameters" element="tns:dame_id_multimedResponse" />
+  </wsdl:message>
+  <wsdl:message name="son_multimediaSoapIn">
+    <wsdl:part name="parameters" element="tns:son_multimedia" />
+  </wsdl:message>
+  <wsdl:message name="son_multimediaSoapOut">
+    <wsdl:part name="parameters" element="tns:son_multimediaResponse" />
+  </wsdl:message>
+  <wsdl:message name="mover_ficheroSoapIn">
+    <wsdl:part name="parameters" element="tns:mover_fichero" />
+  </wsdl:message>
+  <wsdl:message name="mover_ficheroSoapOut">
+    <wsdl:part name="parameters" element="tns:mover_ficheroResponse" />
+  </wsdl:message>
+  <wsdl:message name="traer_ficheroSoapIn">
+    <wsdl:part name="parameters" element="tns:traer_fichero" />
+  </wsdl:message>
+  <wsdl:message name="traer_ficheroSoapOut">
+    <wsdl:part name="parameters" element="tns:traer_ficheroResponse" />
+  </wsdl:message>
+  <wsdl:portType name="telediagnosticoWSSoap">
+    <wsdl:operation name="valida_entrada">
+      <wsdl:input message="tns:valida_entradaSoapIn" />
+      <wsdl:output message="tns:valida_entradaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dame_img_aud">
+      <wsdl:input message="tns:dame_img_audSoapIn" />
+      <wsdl:output message="tns:dame_img_audSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="toda_informacion">
+      <wsdl:input message="tns:toda_informacionSoapIn" />
+      <wsdl:output message="tns:toda_informacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="datos_paciente_HCIS">
+      <wsdl:input message="tns:datos_paciente_HCISSoapIn" />
+      <wsdl:output message="tns:datos_paciente_HCISSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="actualiza_paciente">
+      <wsdl:input message="tns:actualiza_pacienteSoapIn" />
+      <wsdl:output message="tns:actualiza_pacienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="datos_paciente">
+      <wsdl:input message="tns:datos_pacienteSoapIn" />
+      <wsdl:output message="tns:datos_pacienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="nuevo_paciente">
+      <wsdl:input message="tns:nuevo_pacienteSoapIn" />
+      <wsdl:output message="tns:nuevo_pacienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="nuevo_episodio">
+      <wsdl:input message="tns:nuevo_episodioSoapIn" />
+      <wsdl:output message="tns:nuevo_episodioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="nuevo_fichero">
+      <wsdl:input message="tns:nuevo_ficheroSoapIn" />
+      <wsdl:output message="tns:nuevo_ficheroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="preguntar_a_gfh">
+      <wsdl:input message="tns:preguntar_a_gfhSoapIn" />
+      <wsdl:output message="tns:preguntar_a_gfhSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="grabar_textos">
+      <wsdl:input message="tns:grabar_textosSoapIn" />
+      <wsdl:output message="tns:grabar_textosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mira_nulo">
+      <wsdl:input message="tns:mira_nuloSoapIn" />
+      <wsdl:output message="tns:mira_nuloSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="inserta_log">
+      <wsdl:input message="tns:inserta_logSoapIn" />
+      <wsdl:output message="tns:inserta_logSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="existe_paciente">
+      <wsdl:input message="tns:existe_pacienteSoapIn" />
+      <wsdl:output message="tns:existe_pacienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="existe_episodio">
+      <wsdl:input message="tns:existe_episodioSoapIn" />
+      <wsdl:output message="tns:existe_episodioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dame_episodios_paciente">
+      <wsdl:input message="tns:dame_episodios_pacienteSoapIn" />
+      <wsdl:output message="tns:dame_episodios_pacienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dame_GFH">
+      <wsdl:input message="tns:dame_GFHSoapIn" />
+      <wsdl:output message="tns:dame_GFHSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dame_servicios">
+      <wsdl:input message="tns:dame_serviciosSoapIn" />
+      <wsdl:output message="tns:dame_serviciosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dame_respuestas_episodio">
+      <wsdl:input message="tns:dame_respuestas_episodioSoapIn" />
+      <wsdl:output message="tns:dame_respuestas_episodioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dame_servicios_episodio">
+      <wsdl:input message="tns:dame_servicios_episodioSoapIn" />
+      <wsdl:output message="tns:dame_servicios_episodioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="elimina_pregunta">
+      <wsdl:input message="tns:elimina_preguntaSoapIn" />
+      <wsdl:output message="tns:elimina_preguntaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="elimina_episodio">
+      <wsdl:input message="tns:elimina_episodioSoapIn" />
+      <wsdl:output message="tns:elimina_episodioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="elimina_fichero">
+      <wsdl:input message="tns:elimina_ficheroSoapIn" />
+      <wsdl:output message="tns:elimina_ficheroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="control_respuestas">
+      <wsdl:input message="tns:control_respuestasSoapIn" />
+      <wsdl:output message="tns:control_respuestasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dame_id_multimed">
+      <wsdl:input message="tns:dame_id_multimedSoapIn" />
+      <wsdl:output message="tns:dame_id_multimedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="son_multimedia">
+      <wsdl:input message="tns:son_multimediaSoapIn" />
+      <wsdl:output message="tns:son_multimediaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mover_fichero">
+      <wsdl:input message="tns:mover_ficheroSoapIn" />
+      <wsdl:output message="tns:mover_ficheroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="traer_fichero">
+      <wsdl:input message="tns:traer_ficheroSoapIn" />
+      <wsdl:output message="tns:traer_ficheroSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="telediagnosticoWSSoap" type="tns:telediagnosticoWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="valida_entrada">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/valida_entrada" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dame_img_aud">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/dame_img_aud" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="toda_informacion">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/toda_informacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="datos_paciente_HCIS">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/datos_paciente_HCIS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualiza_paciente">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/actualiza_paciente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="datos_paciente">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/datos_paciente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="nuevo_paciente">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/nuevo_paciente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="nuevo_episodio">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/nuevo_episodio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="nuevo_fichero">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/nuevo_fichero" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="preguntar_a_gfh">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/preguntar_a_gfh" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="grabar_textos">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/grabar_textos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mira_nulo">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/mira_nulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="inserta_log">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/inserta_log" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="existe_paciente">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/existe_paciente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="existe_episodio">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/existe_episodio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dame_episodios_paciente">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/dame_episodios_paciente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dame_GFH">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/dame_GFH" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dame_servicios">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/dame_servicios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dame_respuestas_episodio">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/dame_respuestas_episodio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dame_servicios_episodio">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/dame_servicios_episodio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="elimina_pregunta">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/elimina_pregunta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="elimina_episodio">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/elimina_episodio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="elimina_fichero">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/elimina_fichero" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="control_respuestas">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/control_respuestas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dame_id_multimed">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/dame_id_multimed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="son_multimedia">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/son_multimedia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mover_fichero">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/mover_fichero" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="traer_fichero">
+      <soap:operation soapAction="http://hcrtelediagnosticoWS/traer_fichero" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="telediagnosticoWSSoap12" type="tns:telediagnosticoWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="valida_entrada">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/valida_entrada" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dame_img_aud">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/dame_img_aud" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="toda_informacion">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/toda_informacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="datos_paciente_HCIS">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/datos_paciente_HCIS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualiza_paciente">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/actualiza_paciente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="datos_paciente">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/datos_paciente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="nuevo_paciente">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/nuevo_paciente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="nuevo_episodio">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/nuevo_episodio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="nuevo_fichero">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/nuevo_fichero" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="preguntar_a_gfh">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/preguntar_a_gfh" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="grabar_textos">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/grabar_textos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mira_nulo">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/mira_nulo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="inserta_log">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/inserta_log" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="existe_paciente">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/existe_paciente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="existe_episodio">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/existe_episodio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dame_episodios_paciente">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/dame_episodios_paciente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dame_GFH">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/dame_GFH" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dame_servicios">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/dame_servicios" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dame_respuestas_episodio">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/dame_respuestas_episodio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dame_servicios_episodio">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/dame_servicios_episodio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="elimina_pregunta">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/elimina_pregunta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="elimina_episodio">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/elimina_episodio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="elimina_fichero">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/elimina_fichero" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="control_respuestas">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/control_respuestas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dame_id_multimed">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/dame_id_multimed" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="son_multimedia">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/son_multimedia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mover_fichero">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/mover_fichero" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="traer_fichero">
+      <soap12:operation soapAction="http://hcrtelediagnosticoWS/traer_fichero" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <!-- Es necesario indicar la IP del servidor donde tenemos publicado el WS-->
+  <wsdl:service name="telediagnosticoWS">
+    <wsdl:port name="telediagnosticoWSSoap" binding="tns:telediagnosticoWSSoap">
+      <soap:address location="http://ip:puerto/telediagnosticoWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="telediagnosticoWSSoap12" binding="tns:telediagnosticoWSSoap12">
+      <soap12:address location="http://ip:puerto/telediagnosticoWS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

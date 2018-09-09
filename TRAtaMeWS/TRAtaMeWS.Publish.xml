@@ -1,0 +1,40 @@
+<publishData>
+  <publishTarget publishUrl="\\10.196.6.33\TRAtaMe_pub\TRAtaMeWS\">
+    <file relUrl="bin/telediagnosticoWS.xml" publishTime="04/03/2018 10:34:36" />
+    <file relUrl="bin/telediagnosticoWS.XmlSerializers.dll" publishTime="04/03/2018 10:34:38" />
+    <file relUrl="bin/telediagnosticoWS.dll" publishTime="04/03/2018 10:34:36" />
+    <file relUrl="bin/TRAtaMeWS.XmlSerializers.dll" publishTime="08/08/2018 13:29:57" />
+    <file relUrl="Web.config" publishTime="08/08/2018 10:52:12" />
+    <file relUrl="TRAtaMeWS.asmx" publishTime="08/02/2018 09:44:09" />
+    <file relUrl="bin/TRAtaMeWS.dll" publishTime="08/08/2018 13:29:57" />
+    <file relUrl="bin/TRAtaMeWS.pdb" publishTime="08/08/2018 13:29:57" />
+    <file relUrl="bin/telediagnosticoWS.pdb" publishTime="04/03/2018 10:34:36" />
+    <file relUrl="bin/TRAtaMeWS.xml" publishTime="08/08/2018 13:29:57" />
+  </publishTarget>
+  <publishTarget publishUrl="\\10.196.6.33\telemed_pub\telediagnosticoWS\">
+    <file relUrl="bin/telediagnosticoWS.xml" publishTime="04/03/2018 10:34:36" />
+    <file relUrl="bin/telediagnosticoWS.XmlSerializers.dll" publishTime="04/03/2018 10:34:38" />
+    <file relUrl="telediagnosticoWS.vbproj" publishTime="10/20/2017 12:37:25" />
+    <file relUrl="bin/telediagnosticoWS.dll" publishTime="04/03/2018 10:34:36" />
+    <file relUrl="Web.config" publishTime="04/10/2018 11:04:26" />
+    <file relUrl="telediagnosticoWS.vbproj.user" publishTime="10/20/2017 12:37:25" />
+    <file relUrl="telediagnosticoWS.asmx" publishTime="07/10/2017 12:26:53" />
+    <file relUrl="bin/telediagnosticoWS.pdb" publishTime="04/03/2018 10:34:36" />
+  </publishTarget>
+  <publishTarget publishUrl="\\HCRTDERMAS01\telemed_pub\telediagnosticoWSnuevo\">
+    <file relUrl="bin/telediagnosticoWS.dll" publishTime="07/14/2017 10:21:30" />
+    <file relUrl="bin/telediagnosticoWS.XmlSerializers.dll" publishTime="07/14/2017 10:21:30" />
+    <file relUrl="telediagnosticoWS.asmx" publishTime="07/10/2017 12:26:53" />
+    <file relUrl="bin/telediagnosticoWS.xml" publishTime="07/14/2017 10:21:30" />
+    <file relUrl="bin/telediagnosticoWS.pdb" publishTime="07/14/2017 10:21:30" />
+    <file relUrl="Web.config" publishTime="07/14/2017 10:10:54" />
+  </publishTarget>
+  <publishTarget publishUrl="\\HCRTDERMAS01\telemed_pub\telediagnosticoWS\">
+    <file relUrl="bin/telediagnosticoWS.dll" publishTime="07/14/2017 10:21:30" />
+    <file relUrl="bin/telediagnosticoWS.XmlSerializers.dll" publishTime="07/14/2017 10:21:30" />
+    <file relUrl="telediagnosticoWS.asmx" publishTime="07/10/2017 12:26:53" />
+    <file relUrl="bin/telediagnosticoWS.xml" publishTime="07/14/2017 10:21:30" />
+    <file relUrl="bin/telediagnosticoWS.pdb" publishTime="07/14/2017 10:21:30" />
+    <file relUrl="Web.config" publishTime="07/14/2017 10:10:54" />
+  </publishTarget>
+</publishData>

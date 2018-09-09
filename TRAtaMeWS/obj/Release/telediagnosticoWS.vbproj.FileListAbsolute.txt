@@ -1,0 +1,11 @@
+C:\telemedicina\telediagnosticoWS\telediagnosticoWS\bin\telediagnosticoWS.dll
+C:\telemedicina\telediagnosticoWS\telediagnosticoWS\bin\telediagnosticoWS.XmlSerializers.dll
+C:\telemedicina\telediagnosticoWS\telediagnosticoWS\bin\telediagnosticoWS.pdb
+C:\telemedicina\telediagnosticoWS\telediagnosticoWS\bin\telediagnosticoWS.xml
+C:\telemedicina\telediagnosticoWS\telediagnosticoWS\obj\Release\ResolveAssemblyReference.cache
+C:\telemedicina\telediagnosticoWS\telediagnosticoWS\obj\Release\telediagnosticoWS.Resources.resources
+C:\telemedicina\telediagnosticoWS\telediagnosticoWS\obj\Release\telediagnosticoWS.vbproj.GenerateResource.Cache
+C:\telemedicina\telediagnosticoWS\telediagnosticoWS\obj\Release\telediagnosticoWS.dll
+C:\telemedicina\telediagnosticoWS\telediagnosticoWS\obj\Release\telediagnosticoWS.xml
+C:\telemedicina\telediagnosticoWS\telediagnosticoWS\obj\Release\telediagnosticoWS.pdb
+C:\telemedicina\telediagnosticoWS\telediagnosticoWS\obj\Release\telediagnosticoWS.XmlSerializers.dll
